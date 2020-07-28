@@ -1,2 +1,1 @@
-# endorsesolomon
 # endorsesolomon.github.io
