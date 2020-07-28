@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Chunkfive';
+    src: url('fonts/chunkfive.ttf');
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('fonts/coolvetica.ttf');
+}
+
+@font-face {
+    font-family: 'Elephant';
+    src: url('fonts/elephant.TTF');
+}
+
+#canvas {
+    margin: auto;
+    background: #ececec;
+    width: 100%;
+}
+
+.btn {
+    font-family: 'Chunkfive';
+}
+
+label {
+    font-family: 'Coolvetica';
+}
+
+#authorName {
+    font-family: 'Chunkfive';
+}
+
+#imgText {
+    font-family: 'Coolvetica';
+}

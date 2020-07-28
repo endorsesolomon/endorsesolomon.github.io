@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>ImageFilter</title>
+</head>
+
+<body class="bg-dark">
+    <nav class="navbar navbar-dark bg-dark my-5">
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="#">
+                <img src="images/White_Spread_SolomonLogo.png" width="200" height="auto" alt="" loading="lazy">
+            </a>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 m-auto">
+
+                <canvas id="canvas" class="rounded mb-4"></canvas>
+
+
+
+                <div class="row text-center mb-4">
+
+                    <div class="col-md-6 m-auto input-group mb-3">
+                        <div class="custom-file mb-4">
+                            <input type="file" class="custom-file-input" id="upload-img" />
+                            <label id="fileLabel" class="custom-file-label" for="upload-img">Choose file</label>
+                        </div>
+                        <!-- <div class="slidecontainer">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            <h1 id="demo"></h1>
+                        </div> -->
+                    </div>
+
+                    <div class="col-md-6 m-auto">
+                        <div class="input-group mb-4">
+                            <input id="authorName" type="text" maxlength="20" class="form-control rounded-pill" placeholder="Your Name" aria-label="authorName">
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 m-auto">
+                        <div class="input-group mb-4">
+                            <input id="imgText" type="text" maxlength="325" class="form-control rounded-pill" placeholder="Image Text" aria-label="ImageText">
+                        </div>
+                    </div>
+                    <div class="col-md-3 m-auto">
+                        <button id="apply-btn" class="btn btn-success btn-block rounded-pill mb-4">Apply Filter</button>
+                    </div>
+
+
+                    <div class="col-md-4 m-auto">
+                        <button id="download-btn" onclick="addText()" class="btn btn-primary btn-block rounded-pill my-2">Download Image</button>
+                    </div>
+                    <div class="col-md-4 m-auto my-2">
+                        <button id="reset-btn" class="btn btn-danger btn-block rounded-pill my-2">Reset Image</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js" integrity="sha512-JjFeUD2H//RHt+DjVf1BTuy1X5ZPtMl0svQ3RopX641DWoSilJ89LsFGq4Sw/6BSBfULqUW/CfnVopV5CfvRXA==" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html
