@@ -31,14 +31,15 @@
                 <div class="row text-center mb-4">
 
                     <div class="col-md-6 m-auto input-group mb-3">
-                        <div class="custom-file mb-4">
+                        <div class="custom-file">
                             <input type="file" class="custom-file-input" id="upload-img" />
                             <label id="fileLabel" class="custom-file-label" for="upload-img">Choose file</label>
+
                         </div>
-                        <!-- <div class="slidecontainer">
-                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                            <h1 id="demo"></h1>
-                        </div> -->
+                        <div class="col-md-12 m-auto mb-4">
+                            <a href="https://www.photoresizer.com/" target="_blank">Crop image to square</a>
+                        </div>
+
                     </div>
 
                     <div class="col-md-6 m-auto">
@@ -56,7 +57,6 @@
                         <button id="apply-btn" class="btn btn-success btn-block rounded-pill mb-4">Apply Filter</button>
                     </div>
 
-
                     <div class="col-md-4 m-auto">
                         <button id="download-btn" onclick="addText()" class="btn btn-primary btn-block rounded-pill my-2">Download Image</button>
                     </div>
@@ -64,6 +64,7 @@
                         <button id="reset-btn" class="btn btn-danger btn-block rounded-pill my-2">Reset Image</button>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>

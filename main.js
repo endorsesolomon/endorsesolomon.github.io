@@ -124,11 +124,11 @@ applyBtn.addEventListener('click', () => {
             ctx.clip(); //call the clip method so the next render is clipped in last path
             ctx.stroke();
             ctx.closePath();
-            ctx.drawImage(circle, -175, 600, 2000, 1400);
+            ctx.drawImage(circle, 100, 600, 1200, 1200);
         };
-
-
     }, false);
+
+
 });
 
 applyBtn.addEventListener('click', function() {
@@ -181,11 +181,22 @@ function download(canvas, filename) {
     link.dispatchEvent(e);
 }
 
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value
-
+var sliderx = document.getElementById("rangex");
+var slidery = document.getElementById("rangey");
+var sliders = document.getElementById("ranges");
+var outputx = document.getElementById("demox");
+var outputy = document.getElementById("demoy");
+var outputs = document.getElementById("demos");
+outputx.innerHTML = sliderx.value; // Display the default slider value
+outputy.innerHTML = slidery.value;
+outputs.innerHTML = sliders.value;
 // Update the current slider value (each time you drag the slider handle)
-// slider.oninput = function() {
-//     output.innerHTML = this.value;
-// }
+sliderx.oninput = function() {
+    outputx.innerHTML = this.value;
+}
+slidery.oninput = function() {
+    outputy.innerHTML = this.value;
+}
+sliders.oninput = function() {
+    outputs.innerHTML = this.value;
+}
